@@ -1,17 +1,14 @@
 document.addEventListener('DOMContentLoaded', () => {
-
   const pixelClick = document.querySelectorAll('.pixel');
   const colorClick = document.querySelectorAll('.color');
   const toolClick = document.querySelectorAll('.tool');
   const widthCanvas = 14;
-
 
   toolClick.forEach(element => {
     element.addEventListener("click", () => {
       document.querySelector(".tool-selected").classList.remove("tool-selected");
       element.classList.add("tool-selected");
     })
-
   })
   colorClick.forEach(element => {
     element.addEventListener("click", () => {
